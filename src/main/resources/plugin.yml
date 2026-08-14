@@ -1,0 +1,23 @@
+name: CrateSystem
+version: '1.0.0'
+main: com.mycrates.cratesystem.CrateSystemPlugin
+api-version: '1.21'
+author: MyCrates
+description: CrazyCrates/ExcellentCrates tarzı özel kasa (crate) açma sistemi.
+
+commands:
+  crate:
+    description: Kasa sistemi ana komutu
+    usage: /crate <reload|list|give|setblock|removeblock|open>
+    aliases: [crates, kasa]
+  key:
+    description: Anahtar verme komutu
+    usage: /key give <oyuncu> <kasa> [miktar]
+
+permissions:
+  cratesystem.admin:
+    description: Tüm kasa sistemi admin komutlarına erişim
+    default: op
+  cratesystem.use:
+    description: Kasa açabilme izni
+    default: true

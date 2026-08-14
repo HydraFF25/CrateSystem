@@ -1,0 +1,73 @@
+# Örnek Kasa: "efsanevi"
+# Bu dosyayı kopyalayıp yeni kasalar oluşturabilirsin. Dosya adı = kasa id'si (küçük harf, boşluksuz).
+
+display-name: "&6&lEfsanevi Kasa"
+
+# Kasa anahtarı için görsel item ayarları
+key:
+  material: TRIPWIRE_HOOK
+  name: "&6&lEfsanevi Kasa Anahtarı"
+  lore:
+    - "&7Bu anahtar ile"
+    - "&6Efsanevi Kasa&7'yı açabilirsin."
+
+# GUI menüsünde bu kasanın gösterileceği item (crate-menu için)
+display-item:
+  material: ENDER_CHEST
+  name: "&6&lEfsanevi Kasa"
+  lore:
+    - "&7Sağ tık: Aç (anahtar gerekli)"
+
+# Fiziksel kasa konumları /crate setblock ile otomatik eklenir, elle de yazılabilir:
+# physical-locations:
+#   - "world,100,65,200"
+
+rewards:
+  - id: elmas_x5
+    material: DIAMOND
+    amount: 5
+    name: "&b5 Elmas"
+    lore:
+      - "&75 adet elmas kazandın!"
+    chance: 30.0
+    commands: []
+    # commands: verilirse item yerine/yanında komut çalıştırılır, %player% oyuncu adıyla değişir
+    # örn: "give %player% diamond 5"
+
+  - id: netherit_kirici
+    material: NETHERITE_PICKAXE
+    amount: 1
+    name: "&5&lNetherite Kazma"
+    lore:
+      - "&7Efsanevi bir kazma!"
+    chance: 5.0
+    commands: []
+
+  - id: para_1000
+    material: SUNFLOWER
+    amount: 1
+    name: "&e1000 Coin"
+    lore:
+      - "&7Hesabına 1000 coin eklenir."
+    chance: 20.0
+    commands:
+      - "eco give %player% 1000"
+
+  - id: esya_seti
+    material: IRON_INGOT
+    amount: 16
+    name: "&f16 Demir Külçe"
+    lore:
+      - "&7Küçük bir ödül."
+    chance: 40.0
+    commands: []
+
+  - id: mega_odul
+    material: NETHER_STAR
+    amount: 1
+    name: "&d&lMega Ödül"
+    lore:
+      - "&7Çok nadir bir ödül!"
+    chance: 5.0
+    commands:
+      - "eco give %player% 50000"

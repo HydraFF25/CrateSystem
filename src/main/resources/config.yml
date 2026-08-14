@@ -1,0 +1,32 @@
+# CrateSystem - Genel Ayarlar
+
+messages:
+  prefix: "&8[&6Crate&8] &r"
+  no-permission: "&cBu işlemi yapma yetkin yok."
+  crate-not-found: "&cBöyle bir kasa bulunamadı: %crate%"
+  no-key: "&cBu kasa için anahtarın yok!"
+  key-given: "&aBaşarıyla %player% oyuncusuna %amount%x %crate% anahtarı verdin."
+  key-received: "&a%amount%x %crate% anahtarı aldın!"
+  crate-opening: "&e%crate% kasasını açıyorsun..."
+  crate-won: "&6Tebrikler! &e%reward% &6kazandın!"
+  block-set: "&aFiziksel kasa konumu ayarlandı: %crate%"
+  block-removed: "&aFiziksel kasa konumu kaldırıldı."
+  reloaded: "&aKonfigürasyon yeniden yüklendi."
+  already-opening: "&cŞu anda bir kasa açılıyor, lütfen bekle."
+  invalid-usage: "&cKullanım: %usage%"
+  crate-list: "&6Kasalar: &e%crates%"
+
+settings:
+  # Fiziksel kasa bloğuna sağ tıklandığında parçacık/ses efekti
+  physical-crate:
+    open-sound: BLOCK_CHEST_OPEN
+    win-sound: ENTITY_PLAYER_LEVELUP
+    particle: WITCH
+
+  # Rulet animasyonu ayarları
+  animation:
+    total-steps: 30
+    start-delay-ticks: 1
+    max-delay-ticks: 9
+    gui-size: 54
+    pointer-slot: 22
